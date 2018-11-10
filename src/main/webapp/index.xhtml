@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>JNDI test title</title>
+    <link rel="stylesheet" href="css/basic.css"></link>
+</h:head>
+<h:body>
+    <p:outputPanel styleClass="horizontal_center_panel" id="qualifiers">
+        <h2>Qualifiers testing</h2>
+        <h:outputText styleClass="block" value="#{qualifierTestBean.cashierGreeting.greet('Ahoj')}"/>
+        <h:outputText styleClass="block" value="#{qualifierTestBean.receptionistGreeting.greet('Čau')}"/>
+        <h:outputText styleClass="block" value="#{qualifierTestBean.universalCashierGreeting.greet('Nazdar')}"/>
+        <h:outputText styleClass="block" value="#{qualifierTestBean.universalReceptionistGreeting.greet('Zdravím')}"/>
+    </p:outputPanel>
+</h:body>
+</html>
