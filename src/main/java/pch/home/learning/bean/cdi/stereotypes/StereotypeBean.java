@@ -1,4 +1,4 @@
-package pch.home.learning.bean.cdi.stereotype;
+package pch.home.learning.bean.cdi.stereotypes;
 
 import java.io.Serializable;
 

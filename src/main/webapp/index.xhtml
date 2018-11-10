@@ -9,12 +9,23 @@
     <link rel="stylesheet" href="css/basic.css"></link>
 </h:head>
 <h:body>
+    <h1 class="horizontal_center_panel">UDEMY course</h1>
     <p:outputPanel styleClass="horizontal_center_panel" id="qualifiers">
         <h2>Qualifiers testing</h2>
         <h:outputText styleClass="block" value="#{qualifierTestBean.cashierGreeting.greet('Ahoj')}"/>
         <h:outputText styleClass="block" value="#{qualifierTestBean.receptionistGreeting.greet('Čau')}"/>
         <h:outputText styleClass="block" value="#{qualifierTestBean.universalCashierGreeting.greet('Nazdar')}"/>
         <h:outputText styleClass="block" value="#{qualifierTestBean.universalReceptionistGreeting.greet('Zdravím')}"/>
+    </p:outputPanel>
+
+    <p:outputPanel styleClass="horizontal_center_panel" id="scopes">
+        <h2>Scope testing</h2>
+        <h:outputText styleClass="block" value=" Application scope hashcode: #{scopeBean.applicationScopeBean.beanHashCode()}"/>
+        <h:outputText styleClass="block" value=" Session scope hashcode: #{scopeBean.sessionScopeBean.beanHashCode()}"/>
+        <h:outputText styleClass="block" value=" Conversation scope hashcode: #{scopeBean.conversationScopeBean.beanHashCode()}"/>
+        <h:outputText styleClass="block" value=" Request scope hashcode: #{scopeBean.requestScopeBean.beanHashCode()}"/>
+        <h:outputText styleClass="block" value=" Dependent scope hashcode: #{scopeBean.dependentScopeBean.beanHashCode()}"/>
+
     </p:outputPanel>
 </h:body>
 </html>

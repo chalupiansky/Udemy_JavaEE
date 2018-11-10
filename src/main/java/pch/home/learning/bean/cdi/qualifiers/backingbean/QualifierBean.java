@@ -1,9 +1,9 @@
-package pch.home.learning.bean.cdi.qualifiers_section.backingbean;
+package pch.home.learning.bean.cdi.qualifiers.backingbean;
 
-import pch.home.learning.bean.cdi.qualifiers_section.qualifiers.Cashier;
-import pch.home.learning.bean.cdi.qualifiers_section.qualifiers.Receptionist;
-import pch.home.learning.bean.cdi.qualifiers_section.Greeting;
-import pch.home.learning.bean.cdi.qualifiers_section.qualifiers.Universal;
+import pch.home.learning.bean.cdi.qualifiers.qualifiers.Cashier;
+import pch.home.learning.bean.cdi.qualifiers.qualifiers.Receptionist;
+import pch.home.learning.bean.cdi.qualifiers.Greeting;
+import pch.home.learning.bean.cdi.qualifiers.qualifiers.Universal;
 
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;

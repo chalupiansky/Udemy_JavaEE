@@ -1,4 +1,4 @@
-package pch.home.learning.bean.cdi.cdi_lifecycle;
+package pch.home.learning.bean.cdi.lifecycle;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

@@ -1,4 +1,4 @@
-package pch.home.learning.bean.cdi.qualifiers_section.qualifiers;
+package pch.home.learning.bean.cdi.qualifiers.qualifiers;
 
 import javax.inject.Qualifier;
 import java.lang.annotation.ElementType;
@@ -9,6 +9,5 @@ import java.lang.annotation.Target;
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.METHOD, ElementType.TYPE})
-public @interface Cashier {
-
+public @interface Receptionist {
 }

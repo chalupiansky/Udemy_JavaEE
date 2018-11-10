@@ -1,14 +1,12 @@
-package pch.home.learning.bean.cdi.qualifiers_section.impl;
+package pch.home.learning.bean.cdi.qualifiers.impl;
 
-import pch.home.learning.bean.cdi.qualifiers_section.Greeting;
+import pch.home.learning.bean.cdi.qualifiers.Greeting;
 
 import javax.enterprise.context.RequestScoped;
 import java.io.Serializable;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 @RequestScoped
-@pch.home.learning.bean.cdi.qualifiers_section.qualifiers.Receptionist
+@pch.home.learning.bean.cdi.qualifiers.qualifiers.Receptionist
 public class Receptionist implements Greeting, Serializable {
 
     @Override

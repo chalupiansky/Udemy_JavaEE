@@ -1,7 +1,7 @@
-package pch.home.learning.bean.cdi.qualifiers_section.impl;
+package pch.home.learning.bean.cdi.qualifiers.impl;
 
-import pch.home.learning.bean.cdi.qualifiers_section.Greeting;
-import pch.home.learning.bean.cdi.qualifiers_section.qualifiers.Universal;
+import pch.home.learning.bean.cdi.qualifiers.Greeting;
+import pch.home.learning.bean.cdi.qualifiers.qualifiers.Universal;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package pch.home.learning.bean.cdi.qualifiers_section;
+package pch.home.learning.bean.cdi.qualifiers;
 
 public interface Greeting {
 
