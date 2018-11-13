@@ -3,10 +3,12 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
 <h:head>
     <title>JNDI test title</title>
     <link rel="stylesheet" href="css/basic.css"></link>
+
 </h:head>
 <h:body>
     <h1 class="horizontal_center_panel">UDEMY course</h1>
@@ -25,7 +27,16 @@
         <h:outputText styleClass="block" value=" Conversation scope hashcode: #{scopeBean.conversationScopeBean.beanHashCode()}"/>
         <h:outputText styleClass="block" value=" Request scope hashcode: #{scopeBean.requestScopeBean.beanHashCode()}"/>
         <h:outputText styleClass="block" value=" Dependent scope hashcode: #{scopeBean.dependentScopeBean.beanHashCode()}"/>
+    </p:outputPanel>
 
+    <p:outputPanel styleClass="horizontal_center_panel" id="producer">
+        <h2>Producer testing</h2>
+        <h:outputText styleClass="block" value="Logger name: #{producerTest.logger.name}"/>
+        <h:outputText styleClass="block" value="Username: #{producerTest.username}"/>
+        <h:outputText styleClass="block" value="Country: #{producerTest.country}"/>
+        <p>Random color:</p>
+        <h:outputText id="random_color" value="#{producerTest.getRandomListItem(producerTest.colors)}"/>
     </p:outputPanel>
 </h:body>
+<script type="text/javascript" src="resources/js/index.js"/>
 </html>
