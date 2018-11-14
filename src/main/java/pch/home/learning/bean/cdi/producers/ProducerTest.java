@@ -6,7 +6,6 @@ import pch.home.learning.bean.cdi.producers.qualifier.Username;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.persistence.EntityManager;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Random;
@@ -30,9 +29,6 @@ public class ProducerTest implements Serializable{
     @Inject
     private List<String> colors;
 
-    @Inject
-    private EntityManager entityManager;
-
     public Logger getLogger() {
         return logger;
     }
@@ -51,9 +47,5 @@ public class ProducerTest implements Serializable{
 
     public<T> T getRandomListItem(List<T> list){
         return list.get(new Random().nextInt(list.size()));
-    }
-
-    public EntityManager getEntityManager() {
-        return entityManager;
     }
 }

@@ -46,16 +46,10 @@ public class Producer implements Serializable {
     public String getCountry(){
         return "CZE";
     }
-    @Produces
-    @PersistenceContext
-    public EntityManager entityManager;
 
     // Disposer methid is similar to @PreDestroy method, but for produced beans (@Produces)
     // So it is call before end of cdi managed bean lifecycle (before destroy)
     public void cleanUp(@Disposes @Username  String username){
         username = null;
-    }
-    public void cleanUp(@Disposes EntityManager em){
-        em.close();
     }
 }
