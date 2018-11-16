@@ -20,6 +20,19 @@
   </properties>
 
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/javax.enterprise/cdi-api -->
+    <dependency>
+      <groupId>javax.enterprise</groupId>
+      <artifactId>cdi-api</artifactId>
+      <version>2.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.jboss.weld/weld-core-impl -->
+    <dependency>
+      <groupId>org.jboss.weld</groupId>
+      <artifactId>weld-core-impl</artifactId>
+      <version>3.0.5.Final</version>
+    </dependency>
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-web-api</artifactId>

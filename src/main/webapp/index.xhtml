@@ -6,7 +6,7 @@
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
 <h:head>
-    <title>JNDI test title</title>
+    <title>CDI udemy tutorial</title>
     <link rel="stylesheet" href="css/basic.css"></link>
 
 </h:head>
@@ -46,6 +46,16 @@
                              process="@this" update="@this"/>
             <p:commandButton action="#{interceptorBean.testAuthorization()}" value="Authorize" ajax="true"
                              process="@this" update="@this"/>
+        </p:outputPanel>
+    </h:form>
+    <h:form>
+        <p:outputPanel styleClass="horizontal_center_panel">
+            <h2>Events testing</h2>
+            <p:outputLabel value="Username: " for="username"/>
+            <p:inputText id="username" value="#{eventTestBean.user.username}"/>
+            <p:outputLabel value="Email: " for="email"/>
+            <p:inputText id="email" value="#{eventTestBean.user.email}"/>
+            <p:commandButton action="#{eventTestBean.login()}" value="Submit" ajax="true" process="@form" update="@form" styleClass="block"/>
         </p:outputPanel>
     </h:form>
 </h:body>
